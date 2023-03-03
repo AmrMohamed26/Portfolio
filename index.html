@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://mugshotbot.com/m/EjSTslvu">
+    <meta property="twitter:card" content="summary_large_image">
+    <title>Amr Mohamed | Web Developer | Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="./output.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora&family=Montserrat:wght@100;200;400&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90bcf6ebe6.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-fixed bg-slate-900">
+
+    <section class="wrapper">
+        <div id="stars"></div>
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </section>
+
+    <!-- To-Top -->
+
+    <a href="#" class="to-top sm:hidden md:flex z-50">
+        <i class="fas fa-chevron-up sm:hidden"></i>
+    </a>
+
+    <!-- Navbar -->
+    <nav id="nav" class="relative rounded-lg z-10 backdrop-blur-[2px] mx-auto p-6 selector">
+
+        <div class="flex items-center justify-between">
+            <!-- logo -->
+            <div class="pt-2">
+                <a href="index.html"
+                    class="text-xl md:flex font-play font-bold md:ml-36 ml-0 hover:text-emerald-300  text-white duration-300 cursor-pointer">
+                    Amr
+                    Mohamed
+                </a>
+
+            </div>
+            <!-- menu items -->
+            <div class="hidden md:flex space-x-10 font-mont mr-20">
+                <a href="#about" class="hover:text-emerald-400 text-sm text-white transition duration-300">
+                    ABOUT</a>
+                <a href="#latest-work" class="hover:text-emerald-400 text-sm text-white transition duration-300">
+                    WORK</a>
+                <a href="#how-it-works" class="hover:text-emerald-400 text-sm text-white transition duration-300">
+                    HOW IT WORKS</a>
+                <a href="#testimonails" class="hover:text-emerald-400 text-white text-sm transition duration-300">
+                    TESTIMONIALS</a>
+                <a onclick="openContact()"
+                    class="hover:text-emerald-400 text-white transition duration-300 text-sm cursor-pointer">
+                    CONTACT</a>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <button id="menu-btn" class="block hamburger md:hidden focus:outline-none text-white mt-5 text-right">
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md rounded-md
+                    ">
+                <a href="#about" class="font-bold text-sm hover:text-green-400 text-green-700 transition duration-300">
+                    ABOUT</a>
+                <a href="#latest-work"
+                    class="font-bold text-sm hover:text-green-400 text-green-700 transition duration-300">
+                    WORK</a>
+                <a href="#how-it-works"
+                    class="font-bold hover:text-green-400 text-green-700 text-sm transition duration-300">
+                    HOW IT WORKS</a>
+                <a href="#testimonails"
+                    class="font-bold hover:text-green-400 text-green-700 transition text-sm duration-300">
+                    TESIMONIALS</a>
+                <a onclick="openContact()"
+                    class="font-bold hover:text-green-400 text-green-700 transition duration-300 text-sm cursor-pointer">
+                    CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero-Section -->
+    <section class="selector">
+        <div class="container max-w-7xl md:px-40 sm:px-0 items-center text-center md:text-left mt-28">
+            <h6 class="text-emerald-600 font-mont md:ml-2 text-xl md:text-xl">Hi, my name is</h6>
+            <h1 class="text-gray-200 text-4xl md:text-7xl font-bold mt-3">
+                Amr Mohamed</h1>
+            <h4 class="text-gray-400 font-bold text-xl md:text-4xl mt-5">I build reliable websites that will increase
+                your sales and customers</h4>
+            <p class="text-gray-300 font-lora text-xs md:text-xl mt-5">I’m a
+                <span class="auto-type"></span> with the
+                passion in
+                to solve problems
+            </p>
+            <div class="sm:items-center md:items-start md:justify-start sm:justify-center mt-12 flex space-x-7">
+
+                <button class="button" onclick="openContact()">LET'S
+                    TALK!</button>
+                <button class="button" onclick="openContactMe()">Contact Me</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- About-Section -->
+    <section id="about" class="selector">
+        <div class="container max-w-6xl px-5 mx-auto items-center md:text-left text-center mt-44 justify-center">
+            <h1 class="text-gray-200 text-4xl font-bold mt-2 flex items-center justify-center">
+                About Me
+            </h1>
+            <h4 class="text-gray-400 font-mont font-bold text-xl w-full md:text-4xl mt-12 text-left">
+                A <span class="text-emerald-600 font-bold">Web Designer</span>
+            </h4>
+
+            <div class="md:flex md:space-x-20 sm:space-x-0">
+                <p class="text-gray-300 sm:font-bold font-mont md:text-base text-sm md:w-[50%] mt-5 text-left">
+                    I'm a web Designer, and I love it. I have to say
+                    it's been an incredible journey. I started my
+                    career in IT by helping to build a small web app for a local business. From there, I moved onto
+                    bigger and better
+                    things.!
+                    <br><br>
+                    Fast-forward to today, and I’ve had the privilege of working at a university called
+                    <a href="https://www.apu.edu.my/" target="_blank" class="underline-hover-effect">
+                        <span class="text-emerald-500">
+                            Asia
+                            Pacific University
+                        </span>
+                    </a>
+                    in a
+                    place
+                    called
+                    <a href="https://www.cti.my/" target="_blank" class="underline-hover-effect">
+                        <span class="text-emerald-500">
+                            Center Of Innovation And Technology (CTI)
+                        </span>
+                    </a>.
+                    A huge corporation.
+                    My
+                    main focus these days is building accessible, inclusive products and digital
+                    experiences for my clients.
+                    <br><br>
+                </p>
+                <div
+                    class="md:w-[300px] relative h-1/2 bg-slate-800 hover:bg-gray-200 rounded-lg hover:scale-100 transition ease-in-out delay-150 shadow-lg hover:shadow-white hover:-translate-y-2 md:translate-x-20 duration-500 ... mt-5 md:mt-0">
+                    <img src="./Amr.png" class="hover:scale-105 transition duration-700 hover:translate-y-1">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest-Work -->
+    <section id="latest-work" class="selector flex">
+        <div class="container max-w-6xl px-5 mt-32 flex flex-col mx-auto items-center text-center justify-center">
+            <h1 class="text-gray-200 text-4xl font-bold mt-2 flex items-center justify-center">
+                Latest Work
+            </h1>
+
+            <div class="relative md:flex items-center justify-center mt-12 md:space-x-5">
+                <div
+                    class="md:w-[360px] md:h-[400px] w-[350px] h-[300px] bg-slate-700 hover:bg-transparent hover:shadow-white shadow-lg rounded-lg text-white hover:-translate-y-3 transition duration-500">
+
+
+                    <a target="_blank" class="text-transparent cursor-default">
+                        <i class="fa-brands fa-github float-left md:text-4xl text-3xl m-4"></i>
+                    </a>
+                    <a href="https://dynamic-growth.com/" target="_blank">
+                        <i
+                            class="fa-solid fa-up-right-from-square md:text-3xl text-3xl float-right m-4 hover:text-green-400 duration-300"></i>
+                    </a>
+
+
+                    <h4 class="font-bold md:text-2xl text-xl md:pt-14 pt-10">Dynamic Growth Business Website
+                    </h4>
+
+                    <p class="md:text-lg text-base text-center md:mt-5 mt-6 mb-7 text-gray-300 font-mont font-bold">
+                        Fully
+                        Responsive Dynamic growth full business website Using
+                        Wordpress</p>
+                    <div class="mt-10">
+
+                        <a href="https://dynamic-growth.com/" target="_blank"
+                            class="rounded-lg md:text-lg text-sm border-2 font-bold hover:bg-emerald-800 text-white transition duration-500 p-3">View
+                            Project</a>
+
+                    </div>
+
+                    <div class="flex space-x-3 items-center justify-center md:text-sm text-[11px] ml-1 text-emerald-500 font-bold
+                        mt-12 md:mt-24">
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+                <!-- Second-Project -->
+                <div
+                    class="md:w-[350px] md:h-[400px] sm:w-[350px] sm:h-[300px] bg-slate-700 hover:bg-transparent hover:shadow-white shadow-lg rounded-lg text-white hover:-translate-y-3 transition duration-500 mt-12 md:mt-0">
+
+
+                    <a target="_blank" class="text-transparent cursor-default">
+                        <i class="fa-brands fa-github float-left md:text-4xl text-3xl m-4"></i>
+                    </a>
+                    <a href="https://audette.store/" target="_blank">
+                        <i
+                            class="fa-solid fa-up-right-from-square md:text-3xl text-3xl float-right m-4 hover:text-green-400 duration-300"></i>
+                    </a>
+
+
+                    <h4 class="font-bold md:text-2xl text-xl md:pt-14 pt-10">Audette Full Online Store Website
+                        <br>
+                    </h4>
+
+
+                    <p class="md:text-lg text-base text-center md:mt-5 mt-6 mb-7 text-gray-300 font-mont font-bold">
+                        Fully
+                        Responsive online store
+                        using
+                        Wordpress.</p>
+                    <div class="mt-10">
+
+                        <a href="https://audette.store/" target="_blank"
+                            class="rounded-lg md:text-lg text-sm border-2 font-bold hover:bg-emerald-800 text-white transition duration-500 p-3">View
+                            Project</a>
+
+                    </div>
+
+                    <div class="flex space-x-3 items-center justify-center md:text-sm text-[11px] ml-1 text-emerald-500 font-bold
+                        mt-12 md:mt-24">
+                        <p>Wordpress</p>
+                    </div>
+                </div>
+                <!-- Third-Project -->
+                <div
+                    class="md:w-[350px] md:h-[400px] w-[350px] h-[300px] bg-slate-700 hover:bg-transparent hover:shadow-white shadow-lg rounded-lg text-white hover:-translate-y-3 transition duration-500 mt-12 md:mt-0">
+
+
+                    <a href="https://github.com/AmrMohamed26/ManagePage" target="_blank">
+                        <i
+                            class="fa-brands fa-github float-left md:text-4xl text-3xl m-4 duration-300 hover:text-green-400"></i>
+                    </a>
+                    <a href="https://amr-mohammed.netlify.app/" target="_blank">
+                        <i
+                            class="fa-solid fa-up-right-from-square md:text-3xl text-3xl float-right m-4 hover:text-green-400 duration-300"></i>
+                    </a>
+
+
+                    <h4 class="font-bold md:text-2xl text-xl md:pt-14 pt-10">My Portfolio <br> Page
+                    </h4>
+
+
+                    <p class="md:text-lg text-base text-center md:mt-5 mt-6 mb-7 text-gray-300 font-mont font-bold">
+                        Fully
+                        Responsive Portfolio Page
+                        using
+                        TailwindCss And JavaScript.</p>
+                    <div class="mt-10">
+
+                        <a href="https://amr-mohammed.netlify.app/" target="_blank"
+                            class="rounded-lg md:text-lg text-sm border-2 font-bold hover:bg-emerald-800 text-white transition duration-500 p-3">View
+                            Project</a>
+
+                    </div>
+
+                    <div class="flex space-x-3 items-center justify-center md:text-sm text-[11px] ml-1 text-emerald-500 font-bold
+                        mt-12 md:mt-24">
+                        <p>Html</p>
+                        <p>Tailwind</p>
+                        <p>JavaScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Show More -->
+            <span id="dot" class="text-transparent">...</span>
+            <span id="show">
+                <div class=" mt-12 md:space-x-5 relative md:flex">
+                    <div
+                        class="md:w-[360px] md:h-[400px] w-[350px] h-[300px] bg-slate-700 hover:bg-transparent hover:shadow-white shadow-lg rounded-lg text-white hover:-translate-y-3 transition duration-500">
+
+
+                        <a href="https://github.com/AmrMohamed26/ManagePage" target="_blank">
+                            <i
+                                class="fa-brands fa-github float-left md:text-4xl text-3xl m-4 duration-300 hover:text-green-400"></i>
+                        </a>
+                        <a href="https://manage-lande-page.netlify.app/" target="_blank">
+                            <i
+                                class="fa-solid fa-up-right-from-square md:text-3xl text-3xl float-right m-4 hover:text-green-400 duration-300"></i>
+                        </a>
+
+
+                        <h4 class="font-bold md:text-2xl text-xl md:pt-14 pt-10">Manage Landing
+                            <br> Page
+                        </h4>
+
+
+                        <p
+                            class="md:text-lg text-base text-center md:mt-5 :mt-6 mb-7 text-gray-300 font-mont font-bold">
+                            Fully
+                            Responsive Manage
+                            Landing Page Using
+                            Tailwind Css And JavaScript.</p>
+                        <div class="mt-10">
+
+                            <a href="https://manage-lande-page.netlify.app/" target="_blank"
+                                class="rounded-lg md:text-lg text-sm border-2 font-bold hover:bg-emerald-800 text-white transition duration-500 p-3">View
+                                Project</a>
+
+                        </div>
+
+                        <div class="flex space-x-3 items-center justify-center md:text-sm text-[11px] ml-1 text-emerald-500 font-bold
+                                                            mt-12 md:mt-24">
+                            <p>Html</p>
+                            <p>Tailwind</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <!-- Second-Project -->
+                    <div
+                        class="md:w-[350px] md:h-[400px] w-[350px] h-[300px] bg-slate-700 hover:bg-transparent hover:shadow-white shadow-lg rounded-lg text-white hover:-translate-y-3 transition duration-500 mt-12 md:mt-0">
+
+
+                        <a target="_blank" class="text-transparent cursor-default">
+                            <i class="fa-brands fa-github float-left md:text-4xl text-3xl m-4"></i>
+                        </a>
+                        <a href="https://soty-pink-landing-page.netlify.app/" target="_blank">
+                            <i
+                                class="fa-solid fa-up-right-from-square md:text-3xl text-3xl float-right m-4 hover:text-green-400 duration-300"></i>
+                        </a>
+
+
+                        <h4 class="font-bold md:text-2xl text-xl md:pt-14 pt-10">Softy Pink Landing
+                            <br> Page
+                        </h4>
+
+
+                        <p class="md:text-lg text-base text-center md:mt-5 mt-6 mb-7 text-gray-300 font-mont font-bold">
+                            Fully
+                            Responsive Softy Pink
+                            Landing Page
+                            using
+                            Bootstrap And JavaScript.</p>
+                        <div class="mt-10">
+
+                            <a href="https://soty-pink-landing-page.netlify.app/" target="_blank"
+                                class="rounded-lg md:text-lg text-sm border-2 font-bold hover:bg-emerald-800 text-white transition duration-500 p-3">View
+                                Project</a>
+
+                        </div>
+
+                        <div
+                            class="flex space-x-3 items-center justify-center md:text-sm text-[11px] ml-1 text-emerald-500 font-bold mt-12 md:mt-24">
+                            <p>Html</p>
+                            <p>Bootstrap</p>
+                            <p>JavaScript</p>
+                        </div>
+                    </div>
+                    <!-- Third-Project -->
+                    <div
+                        class="md:w-[350px] md:h-[400px] w-[350px] h-[300px] bg-slate-700 hover:bg-transparent hover:shadow-white shadow-lg rounded-lg text-white hover:-translate-y-3 transition duration-500 mt-12 md:mt-0">
+
+
+                        <a href="https://github.com/AmrMohamed26/University-Site" target="_blank">
+                            <i
+                                class="fa-brands fa-github float-left md:text-4xl text-3xl m-4 duration-300 hover:text-green-400"></i>
+                        </a>
+                        <a href="https://simple-university-site.netlify.app/" target="_blank">
+                            <i
+                                class="fa-solid fa-up-right-from-square md:text-3xl text-3xl float-right m-4 hover:text-green-400 duration-300"></i>
+                        </a>
+
+
+                        <h4 class="font-bold md:text-2xl text-xl md:pt-14 pt-10">University Site Landing And About
+                            Page
+                        </h4>
+
+
+                        <p class="md:text-lg text-base text-center md:mt-5 mt-6 mb-7 text-gray-300 font-mont font-bold">
+                            University Site Landing And About Page
+                            using
+                            html and Css.</p>
+                        <div class="mt-10">
+
+                            <a href="https://simple-university-site.netlify.app/" target="_blank"
+                                class="rounded-lg md:text-lg text-sm border-2 font-bold hover:bg-emerald-800 text-white transition duration-500 p-3">View
+                                Project</a>
+
+                        </div>
+
+                        <div
+                            class="flex space-x-3 items-center justify-center md:text-sm text-[11px] ml-1 text-emerald-500 font-bold mt-12 md:mt-24">
+                            <p>Html</p>
+                            <p>Css</p>
+                        </div>
+                    </div>
+                </div>
+            </span>
+            <button class="button mt-10" onclick="showMore()" id="Btn">Show More</button>
+        </div>
+    </section>
+
+    <!-- How-It-Works -->
+    <section class="timeline-section selector" id="how-it-works">
+        <h1 class="text-gray-200 text-4xl font-bold mt-2 mb-10 flex items-center justify-center">
+            How It Works
+        </h1>
+        <p class="text-gray-200 -mt-6 text-base mb-10 flex items-center justify-center">
+            The process of building a website for your business
+        </p>
+
+        <div class="timeline-items">
+            <div class="timeline-item selector">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content shadow-2xl">
+                    <h3>The Goal Of Builiding The Website</h3>
+                    <p>There must be a goal for building a website for your business whether can be to increase sales
+                        for your business or just to make people know about your business or any other goal.</p>
+                </div>
+            </div>
+            <div class="timeline-item selector">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content shadow-2xl">
+                    <h3>The Design</h3>
+                    <p>After setting up the goal of the website, you will choose the design that you want for the
+                        website </p>
+                </div>
+            </div>
+            <div class="timeline-item selector">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content shadow-2xl">
+                    <h3>Start Building The Website</h3>
+                    <p>After setting up the goal and the design of the website. I will start building the website.I can
+                        build the website by WordPress and also by coding (Html, Css and Javascript). </p>
+                </div>
+            </div>
+            <div class="timeline-item selector">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content shadow-2xl">
+                    <h3>Finalizing The Website</h3>
+                    <p>After I finish the website. We will schedule a meeting to see if there is any changes that you
+                        would like to be implemented in the website. </p>
+                </div>
+            </div>
+            <div class="timeline-item selector">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Publish The Website</h3>
+                    <p>After all the previous steps are done.I will publish the website with the domain you choose and
+                        Voilà, The Website is finished </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <!-- Testimonials -->
+    <div class="selector" id="testimonails">
+        <h1 class="text-gray-200 text-4xl mt-52 font-bold flex items-center justify-center ">
+            Testimonials
+        </h1>
+        <br><br>
+        <div id="testimonials">
+            <div class="wrapper">
+                <div class="testimonial-container shadow-2xl" id="testimonial-container"></div>
+                <button id="prev">&lt;</button>
+                <button id="next">&gt;</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="selector">
+        <div class="container px-5 mx-auto items-center text-center mt-52 justify-center mb-9">
+            <h1 class="text-gray-200 md:text-3xl text-xl font-play font-bold mt-2 text-center">
+                Intersted In Working With Me?
+            </h1>
+
+            <h4 class="text-gray-400 text-center items-center font-mont font-bold text-base md:text-lg mt-5">
+                Got a question or proposal, or just want
+                to say hello? Go ahead.
+            </h4>
+
+            <div class="flex mt-7 items-center justify-center">
+                <button class="button" onclick="openContact()">LET'S
+                    TALK!
+                </button>
+            </div>
+            <div class="flex items-center justify-center">
+                <a href="mailto:amrrmohammed8@gmail.com"
+                    class="text-gray-400 text-center font-mont font-bold text-base md:text-lg mt-5 hover:text-emerald-600 duration-300">
+                    amrrmohammed8@gmail.com
+                </a>
+            </div>
+
+            <div class="space-x-6 text-white text-3xl mt-8 flex mx-auto items-center justify-center ">
+                <a href="https://wa.me/+601123189326" target="_blank">
+                    <img src="./whatsapp.png"
+                        class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[40px] h-[40px] duration-500 ..."></img>
+                </a>
+                <a href="https://www.tiktok.com/@amr_web_developer" target="_blank">
+                    <img src="tiktok.png" class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 
+                        w-[40px] h-[40px] duration-500 ..."></img>
+                </a>
+                <a href="https://github.com/AmrMohamed26" target="_blank">
+                    <img src="icons8-github-750.png"
+                        class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[43px] h-[43px] duration-500 ..."></img>
+                </a>
+                <a href="https://www.instagram.com/amr_coding/" target="_blank">
+                    <img src="instagram.png"
+                        class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[40px] h-[40px] duration-500 ..."></img>
+                </a>
+                <a href="https://www.linkedin.com/in/amr-mohamed-749186243/" target="_blank">
+                    <img src="linkedin.png"
+                        class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[40px] h-[40px] duration-500 ..."></img>
+                </a>
+            </div>
+            <p class="text-gray-400 text-base text-center items-center font-mont font-bold mt-10 capitalize">
+                copyright © made by amr mohamed
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- Contact -->
+
+    <dialog id="contact" class="bg-transparent">
+
+        <div class="container w-[80vw] md:w-full mx-auto my-20 animation bg-white rounded-lg">
+            <div class="p-5 space-y-5 shadow-md shadow-emerald-400 rounded-lg">
+                <i class="fa-solid fa-xmark float-right text-xl cursor-pointer hover:text-gray-600 duration-300"
+                    onclick="closeContact()"></i>
+                <h4 class="text-center text-3xl text-emerald-700">Get In Touch</h4>
+
+                <form name="submit-to-google-sheet">
+                    <div class="grid grid-cols-2 gap-5 md:w-[400px]">
+                        <input type="button" autofocus="true" class="-mt-96" />
+
+                        <input type="name" name="Name"
+                            class="border rounded-md border-gray-500 px-4 py-2 focus:outline-none focus:border-emerald-600 col-span-2"
+                            placeholder="Name" id="contactName" onkeyup="validateName()" />
+                        <span id="nameError" class="text-red-500"></span>
+
+                        <input type="text" name="Email"
+                            class="border rounded-md border-gray-500 px-4 py-2 focus:outline-none focus:border-emerald-600 col-span-2"
+                            placeholder="Email" id="contactEmail" onkeyup="validateEmail()" />
+                        <span id="emailError" class="text-red-500"></span>
+
+                        <textarea cols="10" rows="5"
+                            class="border rounded-md border-gray-500 px-4 py-2 focus:outline-none focus:border-emerald-600 col-span-2"
+                            name="Message" type="message" placeholder="Write your message..." id="contactMessage"
+                            onkeyup="validateMessage()"></textarea>
+                        <span id="messageError" class="text-red-500"></span>
+
+                        <button id="button" onclick="return validateForm()"
+                            class="rounded-lg mt-8 text-center bg-emerald-700 md:mr-14 -ml-36 font-bold hover:bg-emerald-600 text-white transition duration-500 p-3">Send
+                            Message</button> <span id="submitError" class="text-red-500 w-full"></span>
+                    </div>
+                    <span id="msg" class="text-emerald-400"></span>
+                </form>
+            </div>
+        </div>
+    </dialog>
+
+    <!-- Contact-Me -->
+    <dialog id="contact-me" class="bg-transparent">
+
+        <div class="container w-[80vw] md:w-full mx-auto my-20 animation rounded-lg bg-gray-200">
+            <div class="p-5 space-y-5 rounded-lg">
+                <i class="fa-solid fa-xmark float-right text-xl cursor-pointer hover:text-gray-600 duration-300"
+                    onclick="closeContactMe()"></i>
+                <br>
+                <h4 class="text-center get text-3xl text-emerald-700">Contact Me Through</h4>
+                <div class="flex items-center justify-center">
+                    <a href="mailto:amrrmohammed8@gmail.com"
+                        class="text-center font-mont font-bold text-lg md:text-lg mt-5 hover:text-emerald-600 duration-300">
+                        amrrmohammed8@gmail.com
+                    </a>
+                </div>
+                <br>
+
+                <div class="space-x-6 text-white text-3xl mt-8 flex mx-auto items-center justify-center ">
+                    <a href="https://wa.me/+601123189326" target="_blank">
+                        <img src="./whatsapp.png"
+                            class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[40px] h-[40px] duration-500 ..."></img>
+                    </a>
+                    <a href="https://www.instagram.com/amr_coding/" target="_blank">
+                        <img src="instagram.png"
+                            class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[40px] h-[40px] duration-500 ..."></img>
+                    </a>
+                    <a href="https://www.linkedin.com/in/amr-mohamed-749186243/" target="_blank">
+                        <img src="linkedin.png"
+                            class="mx-auto transition ease-in-out hover:-translate-y-1 hover:scale-110 w-[40px] h-[40px] duration-500 ..."></img>
+                    </a>
+                </div>
+            </div>
+    </dialog>
+
+
+    <!-- Script -->
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <script>
+        $( document ).ready( function () {
+            $( '.carousel' ).carousel();
+        } );	
+    </script>
+
+    <script defer src="./app.js"></script>
+
+</body>
+
+</html>
