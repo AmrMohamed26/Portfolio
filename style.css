@@ -1,15 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 html{
     scroll-behavior: smooth;
 }
 body{
     background-image: radial-gradient(ellipse at bottom, #1b2735 0%,#090a0f 100%);
 }
-
-/* How-It-Works */
 .timeline-section{
 	min-height: 100vh;
 	padding: 100px 15px;
@@ -95,13 +92,10 @@ body{
 		left:0;
 	}
 }
-
 .auto-type{
 --tw-text-opacity: 1;
     color: rgb(5 150 105 / var(--tw-text-opacity));
         }
-
-/* Testimonials */
   .wrapper {
   position: relative;
   width: 80vw;
@@ -170,20 +164,15 @@ button#prev {
     font-size: 14px;
   }
   }
-
- /* Underline-Hover-Effect */
-
 a.underline-hover-effect {
   text-decoration: none;
   color: inherit;
 }
-
 .underline-hover-effect {
   display: inline-block;
   padding-bottom: 0.25rem;
   position: relative;
 }
-
 .underline-hover-effect::before {
   content: "";
   position: absolute;
@@ -197,9 +186,6 @@ a.underline-hover-effect {
 .underline-hover-effect:hover::before {
   width: 100%;
 }
-
-/* Stars-Background */
-
 #stars {
     width: 1px;
     height: 1px;
@@ -383,7 +369,6 @@ a.underline-hover-effect {
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
 }
-
 #stars:after {
     content: '';
     position: absolute;
@@ -569,7 +554,6 @@ a.underline-hover-effect {
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
 }
-
 #stars1 {
     width: 1px;
     height: 1px;
@@ -753,7 +737,6 @@ a.underline-hover-effect {
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
 }
-
 #stars1:after {
     content: '';
     position: absolute;
@@ -939,7 +922,6 @@ a.underline-hover-effect {
     659px 1860px #fff, 388px 1412px #fff, 1212px 458px #fff, 755px 1468px #fff,
     696px 1654px #fff, 1144px 60px #fff;
 }
-
 #stars2 {
     width: 2px;
     height: 2px;
@@ -997,7 +979,6 @@ a.underline-hover-effect {
     156px 81px #fff, 1915px 502px #fff, 1076px 1846px #fff, 152px 1669px #fff,
     986px 1529px #fff, 1667px 1137px #fff;
 }
-
 #stars2:after {
     content: '';
     position: absolute;
@@ -1057,7 +1038,6 @@ a.underline-hover-effect {
     156px 81px #fff, 1915px 502px #fff, 1076px 1846px #fff, 152px 1669px #fff,
     986px 1529px #fff, 1667px 1137px #fff;
 }
-
 #stars3 {
     width: 3px;
     height: 3px;
@@ -1090,7 +1070,6 @@ a.underline-hover-effect {
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
-
 #stars3:after {
     content: '';
     position: absolute;
@@ -1125,8 +1104,6 @@ a.underline-hover-effect {
     494px 1957px #fff, 1296px 431px #fff, 175px 1507px #fff, 831px 121px #fff,
     498px 1947px #fff, 617px 880px #fff, 240px 403px #fff;
 }
-
-
 @keyframes animStar {
     from {
         transform: translateY(0px);
@@ -1135,7 +1112,6 @@ a.underline-hover-effect {
         transform: translateY(-2000px);
     }
 }
-
 .animation{
     animation:fadeIn 0.5s
 }
@@ -1148,7 +1124,6 @@ a.underline-hover-effect {
         opacity:1
     }
 }
-
 @keyframes fadeout {
     from{
         opacity:1
@@ -1158,9 +1133,6 @@ a.underline-hover-effect {
         opacity:0
     }
 }
-
-/* Hamburger */
-
 .hamburger {
   cursor: pointer;
   width: 24px;
@@ -1168,7 +1140,6 @@ a.underline-hover-effect {
   transition: all 0.25s;
   position: relative;
 }
-
 .hamburger-top,
 .hamburger-middle,
 .hamburger-bottom {
@@ -1181,34 +1152,25 @@ a.underline-hover-effect {
   transform: rotate(0);
   transition: all 0.5s;
 }
-
 .hamburger-middle {
   transform: translateY(7px);
 }
-
 .hamburger-bottom {
   transform: translateY(14px);
 }
-
 .open {
   transform: rotate(90deg);
   transform: translateY(0px);
 }
-
 .open .hamburger-top {
   transform: rotate(45deg) translateY(6px) translate(6px);
 }
-
 .open .hamburger-middle {
   display: none;
 }
-
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
-
-/* Button */
-
 .button {
  --color: #00A97F;
  padding: 0.8em 1.7em;
@@ -1226,7 +1188,6 @@ a.underline-hover-effect {
  color: var(--color);
  z-index: 1;
 }
-
 .button::before, .button::after {
  content: '';
  display: block;
@@ -1239,32 +1200,24 @@ a.underline-hover-effect {
  background-color: var(--color);
  transition: 1s ease;
 }
-
 .button::before {
  top: -1em;
  left: -1em;
 }
-
 .button::after {
  left: calc(100% + 1em);
  top: calc(100% + 1em);
 }
-
 .button:hover::before, .button:hover::after {
  height: 410px;
  width: 410px;
 }
-
 .button:hover {
  color: rgb(10, 25, 30);
 }
-
 .button:active {
  filter: brightness(.8);
 }
-
-/* To-Top */
-
 .to-top {
   background: white;
   position: fixed;
@@ -1286,35 +1239,25 @@ a.underline-hover-effect {
   transition: all .5s;
   cursor: pointer;
 }
-
 .to-top:hover{
     background-color: #00A97F;
 }
-
 .to-top.active {
   bottom:32px;
   pointer-events: auto;
   opacity:1;
 }
-
-/* Animate-On-Scroll */
-
 .selector{
   opacity: 0;
   transition: all 1.5s;
 }
-
 .selector:nth-of-type(1){
   transition: top 0.5s;
 }
 .selector:nth-of-type(2){
   transition-delay:450ms;
 }
-
 .show{
   opacity: 1;
 }
-
-/* Show-More */
-
 #show {display: none;}
