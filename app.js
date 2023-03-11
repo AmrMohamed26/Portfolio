@@ -1,48 +1,31 @@
-// Auto Type
-
 var typed = new Typed(".auto-type", {
   strings: ["Web-Designer"],
   typeSpeed: 100,
   backSpeed: 80,
   loop: true,
 });
-
-// Open and Close Contact Form
-
 var dialog = document.getElementById("contact");
 
 function openContact() {
   dialog.showModal();
 }
-
 function closeContact() {
   dialog.close();
 }
-
-// Open and Close Contact Me
-
 var div = document.getElementById("contact-me");
-
 function openContactMe() {
   div.showModal();
 }
-
 function closeContactMe() {
   div.close();
 }
-
-// Responsive Navbar
-
 const btn = document.getElementById("menu-btn");
 const nav = document.getElementById("menu");
-
 btn.addEventListener("click", () => {
   btn.classList.toggle("open");
   nav.classList.toggle("flex");
   nav.classList.toggle("hidden");
 });
-
-// Testimonails
 const testimonials = [
   {
     name: "Asaad Gafar",
@@ -124,17 +107,11 @@ const testimonials = [
       "As a front end web developer, his work is really professional with simple and engaging designs. I'd definitely recommend him",
   },
 ];
-
-//Current Slide
 let i = 0;
-
-//Total Slides
 let j = testimonials.length;
-
 let testimonialContainer = document.getElementById("testimonial-container");
 let nextBtn = document.getElementById("next");
 let prevBtn = document.getElementById("prev");
-
 nextBtn.addEventListener("click", () => {
   i = (j + i + 1) % j;
   displayTestimonial();
@@ -143,7 +120,6 @@ prevBtn.addEventListener("click", () => {
   i = (j + i - 1) % j;
   displayTestimonial();
 });
-
 let displayTestimonial = () => {
   testimonialContainer.innerHTML = `
     <p>${testimonials[i].testimonial}</p>
@@ -153,11 +129,7 @@ let displayTestimonial = () => {
   `;
 };
 window.onload = displayTestimonial;
-
-// To Top Button
-
 const toTop = document.querySelector(".to-top");
-
 window.addEventListener("scroll", () => {
   if (window.pageYOffset > 400) {
     toTop.classList.add("active");
@@ -165,9 +137,6 @@ window.addEventListener("scroll", () => {
     toTop.classList.remove("active");
   }
 });
-
-// Animations
-
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     console.log(entry);
@@ -180,60 +149,46 @@ const observer = new IntersectionObserver((entries) => {
 });
 const selectorElements = document.querySelectorAll(".selector");
 selectorElements.forEach((el) => observer.observe(el));
-
-// Validation Form
-
 var nameError = document.getElementById("nameError");
 var emailError = document.getElementById("emailError");
 var messageError = document.getElementById("messageError");
 var submitError = document.getElementById("submitError");
 var button = document.getElementById("button");
-
 function validateName() {
   var name = document.getElementById("contactName").value;
-
   if (name.length == 0) {
     nameError.innerHTML = "This field is required";
     return false;
   }
-
   if (name.length > 0) {
     nameError.innerHTML = "";
     return true;
   }
 }
-
 function validateEmail() {
   var email = document.getElementById("contactEmail").value;
-
   if (email.length == 0) {
     emailError.innerHTML = "This field is required";
     return false;
   }
-
   if (!email.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
     emailError.innerHTML = "Please enter a valid email";
     return false;
   }
-
   emailError.innerHTML = "";
   return true;
 }
-
 function validateMessage() {
   var message = document.getElementById("contactMessage").value;
-
   if (message.length == 0) {
     messageError.innerHTML = "This field is required";
     return false;
   }
-
   if (message.length > 0) {
     messageError.innerHTML = "";
     return true;
   }
 }
-
 function validateForm() {
   if (!validateName() || !validateEmail() || !validateMessage()) {
     submitError.style.display = "block";
@@ -244,12 +199,10 @@ function validateForm() {
     return false;
   }
 }
-
 const scriptURL =
   "https://script.google.com/macros/s/AKfycbxyvcGhtZMzOLcgFBHIEulVrBLhlPwMAxhWB_FYCD5VuZFrJtg1L1_fDTO6EhK_Rnb5/exec";
 const form = document.forms["submit-to-google-sheet"];
 const msg = document.getElementById("msg");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   button.innerHTML = "Sending...";
@@ -264,14 +217,10 @@ form.addEventListener("submit", (e) => {
     })
     .catch((error) => console.error("Error!", error.message));
 });
-
-// Show More
-
 function showMore() {
   var dot = document.getElementById("dot");
   var more = document.getElementById("show");
   var btn = document.getElementById("Btn");
-
   if (dot.style.display === "none") {
     dot.style.display = "inline";
     btn.innerHTML = "Show more";
